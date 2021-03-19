@@ -1,0 +1,103 @@
+@import "styles.css";
+
+
+/* Landing Contact */
+.pagesContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cardContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--defaultSpace) - 1rem);
+}
+
+.imgCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    width: calc(22rem - var(--defaultSpace));
+    background-color: var(--fourthColor);
+    box-shadow: .1rem .1rem 1rem var(--firstColor);
+    border-radius: .5rem .5rem 0rem 0rem;
+}
+.imgCard img{
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 50%;
+    margin: .5rem;
+}
+
+.cardInfos{
+    width: calc(22rem - var(--defaultSpace));
+    padding: .2rem;
+    background-color: var(--fifthColor);
+    box-shadow: .1rem .1rem .5rem var(--firstColor);
+}
+
+.myInfos{
+    text-align: center;
+    margin: 2.5rem 0;
+}
+.name{
+    font-size: 1.5rem;
+    font-family: var(--secondFontFamily);
+}
+.infoTittle{
+    font-size: 1rem;
+    color: var(--secondColor);
+    font-family: var(--secondFontFamily);
+}
+
+.infoList{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: .5rem 0;
+    font-family: var(--firstFontFamily);
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+    padding: .1rem .5rem;
+    font-size: calc(.1rem + 14px);
+}
+.info svg{
+    margin-right: .3rem;
+    color: var(--secondColor);
+}
+
+
+.infos{
+    display: flex;
+}
+
+.infosText .signature{
+    color: var(--secondColor);
+}
+/* ------------------------------------------------- */
+
+
+@media only screen and (max-width: 480px){
+
+    .header{
+        margin-bottom: 7rem;
+    }
+
+    .container{
+        flex-direction: column;
+        min-height: 80vh;
+    }
+
+
+}

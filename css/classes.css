@@ -1,0 +1,81 @@
+@import "styles.css";
+
+.coursContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.coursAside{
+    background-color: var(--fifthColor);
+    overflow-y: auto;
+}
+
+.menuCours{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coursItem{
+    width: 100%;
+    text-align: center;
+    margin-bottom: .1rem;
+    transition: all .9s ease-in-out;
+}
+.coursItem:hover{
+    background-color: var(--firstColor);
+}
+
+.coursLink{
+    width: 100%;
+    padding: .2rem 1.5rem;
+    font-size: calc(.1rem + 18px);
+    color: var(--secondColor);
+}
+
+.coursContents{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--fourthColor);
+    overflow-y: auto;
+}
+
+.coursTitle{
+    margin-bottom: var(--defaultSpace);
+    font-family: var(--firstFontFamily);
+    font-size: calc(var(--defaultFontSize) + 2rem);
+    text-shadow: .1rem .1rem .5rem var(--firstColor);
+    text-align: center;
+}
+
+.coursText{
+    text-align: justify;
+    margin-bottom: calc(var(--defaultSpace) + 1rem);
+    font-size: calc(.1rem + 18px);
+    border-radius: .5rem;
+    text-shadow: .1rem .1rem 1rem var(--firstColor);
+}
+
+
+@media only screen and (max-width: 480px){
+
+    .header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .coursContainer{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .coursAside{
+        height: 20vh;
+    }
+}
