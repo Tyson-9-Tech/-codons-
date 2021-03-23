@@ -153,8 +153,8 @@ body{
 
 .titles{
     position: fixed;
-    right: 1rem;
-    bottom: 2rem;
+    right: 1.5rem;
+    bottom: 4.5rem;
     z-index: 1;
     font-size: 5vh;
     color: var(--firstColor);
