@@ -57,8 +57,8 @@ svg{
 
 body{
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
     background-color: var(--firstColor);
 }
 
@@ -81,9 +81,8 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 10vh;
-    padding: var(--defaultSpaceLeftRight);
     background-color: var(--firstColor);
+    padding: 0 var(--defaultSpace);
 }
 
 /* Logo */
@@ -144,7 +143,7 @@ body{
 /* Container */
 .container{
     width: 100%;
-    height: 85vh;
+    min-height: 85vh;
     display: flex;
     justify-content: space-around;
     background-color: var(--secondColor);
@@ -152,9 +151,9 @@ body{
 }
 
 .titles{
-    position: fixed;
-    right: 1.5rem;
-    bottom: 4.5rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
     z-index: 1;
     font-size: 5vh;
     color: var(--firstColor);
@@ -235,6 +234,7 @@ body{
     text-align: center;
     background-color: var(--firstColor);
     color: var(--thirdColor);
+    padding: .5rem;
 }
 /* ------------------------------------------------------------------ */
 
@@ -242,7 +242,7 @@ body{
 
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
 
     body{
         min-height: 100vh;
@@ -251,9 +251,10 @@ body{
     }
 
     .header{
-        min-height: 30vh;
         flex-direction: column;
+        font-size: .2rem;
         padding: 0;
+        margin: 0;
     }
 
     .logo{
@@ -265,21 +266,29 @@ body{
         width: 100%;
         flex-direction: column;
         font-size: calc(var(--defaultFontSize) + .8rem);
-        min-height: 25vh;
+        margin-top: var(--defaultSpace);
     }
 
     .menuItem{
+        width: 100%;
         margin-bottom: .5rem;
     }
-
+    
     .menuLink{
+        border-radius: 0;
         width: 100%;
+    }
+
+    .mainConateiner{
+        padding: 0;
+        margin: 0;
     }
 
     .container{
         position: relative;
-        min-height: 100vh;
-        margin-top: 5rem;
+        min-height: 50vh;
+        flex-direction: column;
+        padding: var(--defaultSpace);
     }
 
     .footer{

@@ -65,7 +65,13 @@
   .header {
     min-height: 20vh;
     display: flex;
+    font-size: .2rem;
     flex-direction: column;
+  }
+
+  .container{
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -74,7 +80,6 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    min-height: 30vh;
   }
 
   .coursContainer {
@@ -83,6 +88,7 @@
     flex-direction: column;
     height: 100vh;
     z-index: -1;
+    margin: 0;
   }
 
   .coursAside {

@@ -4,11 +4,28 @@
 /* Landing Contact */
 .pagesContact{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
+
+.infos{
+    display: flex;
+    margin: auto;
+    padding: calc(var(--defaultSpace) - 1rem);
+    text-align: justify;
+    flex: 1;
+}
+
+.infosText{
+    color: var(--firstColor);
+}
+
+.infosText .signature{
+    color: var(--fifthColor);
+    font-weight: bold;
+}
+
 
 .cardContact{
     display: flex;
@@ -16,6 +33,7 @@
     align-items: center;
     justify-content: center;
     padding: calc(var(--defaultSpace) - 1rem);
+    flex: 1;
 }
 
 .imgCard{
@@ -76,28 +94,25 @@
     margin-right: .3rem;
     color: var(--secondColor);
 }
-
-
-.infos{
-    display: flex;
-}
-
-.infosText .signature{
-    color: var(--secondColor);
-}
 /* ------------------------------------------------- */
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
 
     .header{
-        margin-bottom: 7rem;
+        font-size: .2rem;
     }
 
     .container{
         flex-direction: column;
-        min-height: 80vh;
     }
 
+    .pagesContact{
+        flex-direction: column;
+    }
 
+    .infos{
+        padding: 0;
+        margin: 0;
+    }
 }
