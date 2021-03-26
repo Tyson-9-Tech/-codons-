@@ -113,6 +113,7 @@
 
     .infos{
         padding: 0;
-        margin: 0;
+        margin-bottom: calc(var(--defaultSpace) + 1.5rem);
+        font-size: calc(.4rem + 14px);
     }
 }
